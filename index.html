@@ -31,18 +31,37 @@
     <nav class="w-11/12 mx-auto">
         <div class="flex top justify-between items-center h-16">
             <div class="flex">
-                <p><i class="fa-solid fa-bars"></i></p>
+                <p class="laptop:hidden"><i class="fa-solid fa-bars"></i></p>
                 <p class="ml-5"><i class="fa-solid fa-location-dot"></i></p>
                 <p class="mx-1">EN</p>
                 <p><i class="fa-solid fa-caret-down"></i></p>
             </div>
             
-            <div class="w-24 mr-12">
+            <div class="w-24 mr-12 laptop:hidden">
                 <img src="./images/logo.svg" alt="">
             </div>
 
             <div class="">
-                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                <p class="hidden laptop:block"><i class="fa-solid fa-user"></i></p>
+                <p class="laptop:hidden"><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+        </div>
+
+        <div class="hidden laptop:flex justify-between mb-4">
+            <div class="w-24">
+                <img src="./images/logo.svg" alt="">
+            </div>
+
+            <ul class="flex uppercase w-1/2 justify-between">
+                <li>products</li>
+                <li>user guides</li>
+                <li>solutions</li>
+                <li>apparel</li>
+                <li>support</li>
+            </ul>
+
+            <div>
+                <p class=""><i class="fa-solid fa-magnifying-glass"></i></p>
             </div>
         </div>
     </nav>
